@@ -1,8 +1,3 @@
-@import 'normalize.css';
-/* Change all elements to use border-box */
-html {
-	box-sizing: border-box;
-}
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -20,6 +15,12 @@ html {
 body {
 	font-family: "mr-eaves-sans", sans-serif;
 }
+
+.me{
+		width: 33.3333%;
+		clip-path: circle(70px)
+}
+
 .row:after {
 	content: "";
 	display: table;
@@ -35,20 +36,28 @@ body {
 }
 .col-1-3 {
 	width: 33.3333%;
+	background-image: image url(Untitled design (2).png);
 }
 .col-1-9 {
 	width: 11.1111%;
 	min-height: 1px;
 }
-}
+
 header {
 	color: #FFE2B7;
 	text-align: center;
 }
+
+.me{
+		width: 33.3333%;
+		clip-path: circle(70px)
+}
+
 header .row {
 	display: flex;
 	flex-flow: row;
 	align-items: center;
+
 }
 
 @media (max-width: 48em) {
@@ -67,10 +76,12 @@ header h1 {
 	margin: 0;
 }
 header h3 {
-	font-size: 1.5em;
-	font-weight: 100;
-	margin-top: 10px;
-	margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px #FFB3B5;
+    box-shadow: 0px 0px #FFB3B5;
 }
 header img {
 	max-width: 150px;
@@ -87,9 +98,6 @@ header ul {
 	padding-left: 0px;
 }
 
-.header{
-
-}
 header li {
 	list-style-type: none;
 	margin: 15px;
@@ -108,11 +116,13 @@ nav {
 	line-height: 1.5em;
 }
 nav ul {
-	display: flex;
-	flex-flow: row;
-	justify-content: space-around;
-	align-items: center;
-	padding-left: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+    -webkit-box-shadow: 0px 0px #FFB3B5;
+    box-shadow: 0px 0px #FFB3B5;
 }
 
 @media (max-width: 48em) {
@@ -158,7 +168,13 @@ section h1, section h2 {
 	color: #373430;
 	font-weight: 400;
 	margin: 5px 10px;
+
 }
+
+.header {
+	padding: 20px
+}
+
 section h1 {
 	border-bottom: 1px solid #835B1B;
 }
@@ -400,23 +416,23 @@ article {
 }
 
 #portfolio-box-1 {
-		background-image: url("portfolio-main-img-1.jpg");
+		background-image: url("DSC_0035.jpg");
 }
 
 #portfolio-box-2 {
-		background-image: url("portfolio-main-img-2.jpg");
+		background-image: url("70.png");
 }
 
 #portfolio-box-3 {
-		background-image: url("portfolio-main-img-3.jpg");
+		background-image: url("menu mock.jpg");
 }
 
 #portfolio-box-4 {
-		background-image: url("portfolio-main-img-4.jpg");
+		background-image: url("26301.png");
 }
 
 #portfolio-box-5 {
-		background-image: url("portfolio-main-img-5.jpg");
+		background-image: url("cover.png");
 }
 
 
