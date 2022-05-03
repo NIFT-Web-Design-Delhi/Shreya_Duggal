@@ -1,7 +1,3 @@
-font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
 @import 'normalize.css';
 /* Change all elements to use border-box */
 html {
@@ -10,7 +6,7 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-/*******/
+
 
 .background-primary {
 	background-color: #373430;
@@ -61,7 +57,7 @@ header .row {
 }
 }
 header h2 {
-	font-family: "reklame-script", serif;
+	font-family: "Lato", serif;
 	font-weight: 400;
 }
 header h1 {
@@ -89,6 +85,10 @@ header .contact {
 }
 header ul {
 	padding-left: 0px;
+}
+
+.header{
+
 }
 header li {
 	list-style-type: none;
@@ -131,7 +131,7 @@ nav ul li {
 	list-style-type: none;
 	display: inline-block;
 	color: #373430;
-	font-family: "reklame-script", serif;
+	font-family: "Lato", serif;
 	font-size: 1.5em;
 	margin: 0px 20px;
 	padding: 5px 10px;
@@ -154,7 +154,7 @@ section {
 	margin: 20px auto;
 }
 section h1, section h2 {
-	font-family: "reklame-script", serif;
+	font-family: "Lato", serif;
 	color: #373430;
 	font-weight: 400;
 	margin: 5px 10px;
@@ -336,6 +336,90 @@ article {
 .circles {
 	color: #835B1B;
 }
+
+.portfolio-container{
+		display: flex;
+		margin-top: 50px;
+		flex-direction: row;
+		padding: 0 75px;
+}
+
+.portfolio-main {
+		width: 50%;
+		height: 600px;
+}
+
+.portfolio-side {
+		width: 25%;
+		display: flex;
+		flex-direction: column;
+}
+
+.portfolio-side-box {
+		height: 300px;
+}
+
+.portfolio-box-desc {
+		height: 80px;
+		width: 100%;
+		align-self: flex-end;
+		margin: 20px;
+		background-color: white;
+		border-radius: 5px;
+		text-align: center;
+		transition: all .3s;
+		transform: translate(0,10px);
+		opacity: 0;
+}
+
+.portfolio-box {
+		cursor: pointer;
+		display: flex;
+		margin-top: 0px;
+		flex-direction: row;
+		background-size: cover;
+}
+
+.portfolio-box:hover .portfolio-box-desc {
+		opacity: 1;
+		transform: translate(0,0);
+}
+
+.portfolio-box-desc > h3 {
+		margin-top: 15px;
+		margin-bottom: 0;
+}
+
+.portfolio-box-desc > p {
+		margin: 0;
+}
+
+.description{
+		color: #a55e3f;
+		font-style: italic;
+}
+
+#portfolio-box-1 {
+		background-image: url("portfolio-main-img-1.jpg");
+}
+
+#portfolio-box-2 {
+		background-image: url("portfolio-main-img-2.jpg");
+}
+
+#portfolio-box-3 {
+		background-image: url("portfolio-main-img-3.jpg");
+}
+
+#portfolio-box-4 {
+		background-image: url("portfolio-main-img-4.jpg");
+}
+
+#portfolio-box-5 {
+		background-image: url("portfolio-main-img-5.jpg");
+}
+
+
 footer {
 	color: #FFE1B7;
 	text-align: center;
