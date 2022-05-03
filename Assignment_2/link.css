@@ -4,7 +4,7 @@
 
 
 .background-primary {
-	background-color: #373430;
+	background-color: #F8BFC0;
 }
 .background-secondary {
 	background-color: #FFE2B7;
@@ -44,8 +44,9 @@ body {
 }
 
 header {
-	color: #FFE2B7;
+	color: black;
 	text-align: center;
+	font-weight: 500
 }
 
 .me{
@@ -71,7 +72,7 @@ header h2 {
 }
 header h1 {
 	font-size: 5em;
-	font-weight: 100;
+
 	line-height: 0.8em;
 	margin: 0;
 }
@@ -81,7 +82,7 @@ header h3 {
     margin-top: 10px;
     margin-bottom: 20px;
     -webkit-box-shadow: 0px 0px #FFB3B5;
-    box-shadow: 0px 0px #FFB3B5;
+    box-shadow: 0px 0px #E75480;
 }
 header img {
 	max-width: 150px;
@@ -140,7 +141,7 @@ nav ul {
 nav ul li {
 	list-style-type: none;
 	display: inline-block;
-	color: #373430;
+	color: black;
 	font-family: "Lato", serif;
 	font-size: 1.5em;
 	margin: 0px 20px;
@@ -149,11 +150,11 @@ nav ul li {
 }
 nav ul li:hover {
 	color: #FFE1B7;
-	background-color: #373430;
+	background-color: #E75480;
 	cursor: pointer;
 }
 nav a {
-	color: #373430;
+	color: black;
 	text-decoration: none;
 }
 nav a:hover {
@@ -165,7 +166,7 @@ section {
 }
 section h1, section h2 {
 	font-family: "Lato", serif;
-	color: #373430;
+	color: black;
 	font-weight: 400;
 	margin: 5px 10px;
 
@@ -176,7 +177,7 @@ section h1, section h2 {
 }
 
 section h1 {
-	border-bottom: 1px solid #835B1B;
+	border-bottom: 1.5px solid black;
 }
 #section2 article, #section3 article {
 	margin-top: 0;
@@ -199,7 +200,7 @@ section h1 {
 }
 }
 #section1 p {
-	color: #835B1B;
+	color: black;
 	font-style: italic;
 	margin: 5px;
 }
@@ -224,7 +225,7 @@ section h1 {
 }
 #section1 mark {
 	color: #FFE1B7;
-	background-color: #373430;
+	background-color: #E75480;
 	padding: 2px 7px;
 }
 article {
@@ -261,7 +262,7 @@ article {
 	font-size: 1.3em;
 	font-style: normal;
 	font-weight: 700;
-	color: #835B1B;
+	color: black;
 }
 #article6 h2 {
 	text-align: center;
@@ -284,6 +285,14 @@ article {
 	margin-left: 5px;
 }
 
+#section2{
+		align-content: center
+	}
+
+	.header{
+		background-color: #FAD393
+	}
+
 @media (max-width: 48em) {
 #cloud-left {
 	margin-left: 1%;
@@ -303,7 +312,7 @@ article {
 }
 #tag3 {
 	font-size: 3em;
-	color: #835B1B;
+	color: black;
 }
 #tag4 {
 	font-size: 1.9em;
@@ -350,14 +359,14 @@ article {
 	margin: 8px 10px 8px 0px;
 }
 .circles {
-	color: #835B1B;
+	color: #E75480;
 }
 
 .portfolio-container{
 		display: flex;
 		margin-top: 50px;
 		flex-direction: row;
-		padding: 0 75px;
+		padding: 0 0px;
 }
 
 .portfolio-main {
@@ -373,6 +382,7 @@ article {
 
 .portfolio-side-box {
 		height: 300px;
+
 }
 
 .portfolio-box-desc {
@@ -380,7 +390,7 @@ article {
 		width: 100%;
 		align-self: flex-end;
 		margin: 20px;
-		background-color: white;
+		background-color: #E75480;
 		border-radius: 5px;
 		text-align: center;
 		transition: all .3s;
@@ -402,17 +412,17 @@ article {
 }
 
 .portfolio-box-desc > h3 {
-		margin-top: 15px;
+		margin-top: 10px;
 		margin-bottom: 0;
 }
 
 .portfolio-box-desc > p {
-		margin: 0;
+		margin: 10px;
 }
 
 .description{
-		color: #a55e3f;
-		font-style: italic;
+		color: white;
+		font-family: Lato; serif;
 }
 
 #portfolio-box-1 {
@@ -437,12 +447,13 @@ article {
 
 
 footer {
-	color: #FFE1B7;
+	color: black;
 	text-align: center;
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
 	align-items: center;
+	padding: 20px
 }
 @media (max-width: 48em) {
 	footer {
@@ -451,9 +462,9 @@ footer {
 	}
 }
 footer h1 {
-	font-family: "reklame-script", serif;
-	font-weight: 400;
-	margin: 10px 0px 0px 0px;
+	font-family: "Lato", serif;
+	font-weight: 200;
+	margin: 10px 0px 20px 0px;
 }
 footer h2 {
 	margin-top: 10px;
@@ -464,13 +475,13 @@ footer h2 {
 	justify-content: center;
 }
 footer a {
-	color: #FFE1B7;
-	margin: 0px 5px;
+	color: black;
+	margin: 0px 15px;
 	transition: all 0.3s ease 0s;
 }
 footer a:hover {
 	cursor: pointer;
-	color: #DDB97F;
+	color: #E75480;
 }
 footer img {
 	margin-left: 10px;
